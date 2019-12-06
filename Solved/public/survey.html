@@ -192,30 +192,25 @@
       console.log(newFriend);
 
 
-      // $.post("/api/friends", newFriend,
-      //   function (data) {
+      $.post("/api/friends", newFriend,
+        function (data) {
 
-      //     if (data) {
-      //       alert("Yay! You are officially in FriendTinder!");
-      //       console.log(data);
-      //     }
+          if (data) {
+            alert("Yay! You are officially in FriendTinder!");
+            console.log(data);
+          }
 
-      //     else {
-      //       alert("Sorry you are missing something");
-      //     }
+          else {
+            alert("Sorry you are missing something");
+          }
 
 
-      //     $("#Nameinput").val(" ");
-      //     $("#imglink").val(" ");
-      //     // $("#reserve-email").val("");
-      //     // $("#reserve-unique-id").val("");
+          $("#Nameinput").val(" ");
+          $("#imglink").val(" ");
+          // $("#reserve-email").val("");
+          // $("#reserve-unique-id").val("");
 
-      //   });
-      // var numbeArr = (function () {
-      // for (var i = 0; i < questArr.length; index++) {
-      //   parseInt(i);
-
-      // };
+        });
 
 
     });
